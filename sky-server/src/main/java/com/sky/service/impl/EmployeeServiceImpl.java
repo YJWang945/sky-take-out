@@ -99,4 +99,16 @@ public class EmployeeServiceImpl implements EmployeeService {
         return pageResult;
     }
 
+    @Override
+    public void startOrStop(Integer status, Long id) {
+        //这是设计一个通用的update方法,以后任何Service层想进行更新操作就可以调用统一的方法，减少代码的重复度
+        //这里采用动态sql拼接来实现
+        //链式编程创建对象给对象赋值
+        Employee employee = Employee.builder()
+                .id(id)
+                .status(status)
+                .build();
+        employeeMapper.update(employee);
+    }
+
 }
