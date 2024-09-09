@@ -1,4 +1,4 @@
-package com.sky.service.impl.impl;
+package com.sky.service.impl;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
