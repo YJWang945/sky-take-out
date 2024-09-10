@@ -8,6 +8,6 @@ sky:
     password: 123456
   alioss:
     endpoint: oss-cn-beijing.aliyuncs.com
-    access-key-id: LTAI5tGYPHWGfoe1dKFkmKub
-    access-key-secret: 66fdUQynryaywgOne6J8JO1N9xBH5O
+    access-key-id: 自己的keyId
+    access-key-secret: 自己的keySecret
     bucket-name: wyj-sky
